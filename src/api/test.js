@@ -8,7 +8,7 @@ export default {
     // }
     login(name, pass) {
         return axios({
-            url: "http://mengxuegu.com:7300/mock/5f5189718d90085e5b5840f1/login/ind",
+            url: "/ind",
             method: "post",
             data: {
                 username: name,
@@ -16,9 +16,14 @@ export default {
             }
         })
     },
-    getUser(){
+    getUser() {
         return axios({
-            url:"http://mengxuegu.com:7300/mock/5f50b5d58d90085e5b5840a4/jy/yong"
+            url: "http://mengxuegu.com:7300/mock/5f50b5d58d90085e5b5840a4/jy/yong"
+        })
+    },
+    xueshu() {
+        return axios({
+            url: "/xueyuan"
         })
     }
 }
